@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code & Café — Onde o café encontra a programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                ☕ Café <text>&amp;</text> Código
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <div><a href="#inicio">Início</a></div>
+                    <div><a href="#cardapio">Cardápio</a></div>
+                    <div><a href="#sobre">Sobre</a></div>
+                    <div><a href="#contato">Contato</a></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- SEÇÃO DE DESTAQUE -->
+        <section class="hero" id="inicio">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>Café fresco.</h1>
+                    <p>
+                        No <strong>Code &amp; Café</strong>, cada xícara é uma pausa inspiradora
+                        para quem vive entre linhas de código. Venha trabalhar, estudar ou apenas
+                        relaxar com o melhor café da cidade.
+                    </p>
+                    <a href="#cardapio" class="btn">Ver cardápio</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Substitua pelo arquivo img/cafe.jpg -->
+                    <div class="hero-placeholder"><img src="https://png.pngtree.com/png-clipart/20250710/original/pngtree-hot-coffee-in-white-cup-with-steam-cartoon-style-png-image_21275396.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CARDS -->
+        <section class="cards-section" id="cardapio">
+            <div class="container">
+                <h2 class="titulo">Nosso Cardápio</h2>
+                <p class="subtitulo">Escolha sua combinação favorita</p>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <div class="card-image">
+                            <!-- Substitua por <img src="img/cafe.jpg" alt="Cafés"> -->
+                            <img src="https://png.pngtree.com/png-clipart/20250710/original/pngtree-hot-coffee-in-white-cup-with-steam-cartoon-style-png-image_21275396.png" alt="cafe">
+                        </div>
+                        <h3>Cafés</h3>
+                        <p>Expresso, cappuccino, latte, mocha e muito mais. Grãos selecionados e torra artesanal.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://png.pngtree.com/png-clipart/20231109/original/pngtree-cake-chocolate-graphic-png-image_13520239.png" alt="bolo">
+                        </div>
+                        <h3>Bolos</h3>
+                        <p>Bolos caseiros feitos diariamente: cenoura, chocolate, red velvet e opções sem glúten.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://png.pngtree.com/png-clipart/20240109/original/pngtree-cartoon-croissant-png-image_14061296.png" alt="">
+                        </div>
+                        <h3>Salgados</h3>
+                        <p>Croissants, sanduíches naturais, quiches e pães artesanais para o seu lanche.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://png.pngtree.com/png-clipart/20250124/original/pngtree-watercolor-coffee-cup-and-croissant-illustration-png-image_19842708.png" alt="Combos">
+                        </div>
+                        <h3>Combos Especiais</h3>
+                        <p>Café + bolo, combo dev, combo estudante. Economia e sabor em cada combinação.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section class="about" id="sobre">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Sobre a cafeteria</h2>
+                    <p>
+                        Fundada em 2024, a <strong>Café &amp; Código</strong> nasceu da paixão
+                        de dois desenvolvedores por café de qualidade e por criar um espaço
+                        acolhedor para quem trabalha remotamente.
+                    </p>
+                    <p>
+                        Temos Wi-Fi rápido, tomadas em todas as mesas, ambiente silencioso
+                        e o melhor café da região. Aqui, produtividade e sabor caminham juntos.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua das Laranjeiras, 123 — Centro</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h4>Horário</h4>
+                            <p>Seg a Sáb — 7h às 22h</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📶</div>
+                        <div>
+                            <h4>Wi-Fi</h4>
+                            <p>Grátis e de alta velocidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <h2 class="section-title">Entre em contato</h2>
+                <p class="section-subtitle">Reservas, eventos ou apenas um "oi"</p>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                    <input type="email" id="email" placeholder="Seu e-mail" required>
+                    <textarea id="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+                    <button type="submit" class="btn">Enviar mensagem</button>
+                </form>
+                <p class="form-feedback" id="formFeedback"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h4>Café &amp; Código</h4>
+                <p>Onde cada xícara inspira uma nova linha de código.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p>✉️ contato@cafeecodigo.com</p>
+                <p>📞 (42) 202027-0067</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Café &amp; Código. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+\
+</body>
+</html>
