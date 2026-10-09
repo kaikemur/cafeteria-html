@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio — Café &amp; Código</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/cardapio.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a class="logo" href="../../index.html">Café <div class="logo-mark">&amp;</div> Código</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav class="nav" id="nav" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="cardapio.html" aria-current="page">Cardápio</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="../../index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="carousel-eyebrow">Feito com carinho</p>
+                <h1>Nosso cardápio</h1>
+                <p>Escolha seu café, doce ou lanche favorito e aproveite cada pausa.</p>
+            </div>
+        </section>
+
+        <section class="menu-section" aria-labelledby="menu-title">
+            <div class="container">
+                <div class="menu-heading">
+                    <div>
+                        <h2 id="menu-title">Sabores para todos os momentos</h2>
+                        <p>Ingredientes selecionados e preparo artesanal todos os dias.</p>
+                    </div>
+                    <div class="menu-filters" id="menuFilters" aria-label="Filtrar cardápio"></div>
+                </div>
+                <div class="menu-grid" id="menuGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Café &amp; Código. <a href="../../index.html">Voltar para a página inicial</a></p>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
