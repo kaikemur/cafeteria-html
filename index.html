@@ -15,6 +15,10 @@
                 ☕ Café <text>&amp;</text> Código
             </div>
 
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                ☰
+            </button>
+
             <nav class="nav" id="nav">
                 <ul class="nav-list">
                     <div><a href="#inicio">Início</a></div>
@@ -26,29 +30,50 @@
         </div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
+
+    <section class="carousel" aria-label="Destaques da cafeteria">
+        <div class="carousel-track" id="carouselTrack">
+            <article class="carousel-slide is-active">
+                <img src="https://png.pngtree.com/png-clipart/20250710/original/pngtree-hot-coffee-in-white-cup-with-steam-cartoon-style-png-image_21275396.png" alt="Café quente servido em uma xícara branca">
+                <div class="carousel-caption">
+                    <p class="carousel-eyebrow">Comece bem o dia</p>
+                    <h1>Café fresco para inspirar suas ideias.</h1>
+                    <a href="#cardapio" class="btn">Conheça o cardápio</a>
+                </div>
+            </article>
+            <article class="carousel-slide">
+                <img src="https://png.pngtree.com/png-clipart/20231109/original/pngtree-cake-chocolate-graphic-png-image_13520239.png" alt="Fatia de bolo de chocolate">
+                <div class="carousel-caption">
+                    <p class="carousel-eyebrow">Feito todos os dias</p>
+                    <h1>Doces momentos para aproveita.</h1>
+                    <a href="#cardapio" class="btn">Ver opções</a>
+                </div>
+            </article>
+            <article class="carousel-slide">
+                <img src="https://png.pngtree.com/png-clipart/20240109/original/pngtree-cartoon-croissant-png-image_14061296.png" alt="Croissant artesanal">
+                <div class="carousel-caption">
+                    <p class="carousel-eyebrow">Lanche artesanal</p>
+                    <h1>Sabores que motivam a rotina.</h1>
+                    <a href="#contato" class="btn">Faça uma reserva</a>
+                </div>
+            </article>
+        </div>
+        <button class="carousel-control carousel-control-prev" id="carouselPrev" type="button" aria-label="Imagem anterior">
+            &#10094;
+        </button>
+        <button class="carousel-control carousel-control-next" id="carouselNext" type="button" aria-label="Próxima imagem">
+            &#10095;
+        </button>
+        <div class="carousel-indicators" id="carouselIndicators" aria-label="Selecionar destaque">
+            <button class="carousel-indicator is-active" type="button" aria-label="Ir para o destaque 1" aria-current="true"></button>
+            <button class="carousel-indicator" type="button" aria-label="Ir para o destaque 2"></button>
+            <button class="carousel-indicator" type="button" aria-label="Ir para o destaque 3"></button>
+        </div>
+    </section>
+
+
     <main>
 
-        <!-- SEÇÃO DE DESTAQUE -->
-        <section class="hero" id="inicio">
-            <div class="container hero-container">
-                <div class="hero-text">
-                    <h1>Café fresco.</h1>
-                    <p>
-                        No <strong>Code &amp; Café</strong>, cada xícara é uma pausa inspiradora
-                        para quem vive entre linhas de código. Venha trabalhar, estudar ou apenas
-                        relaxar com o melhor café da cidade.
-                    </p>
-                    <a href="#cardapio" class="btn">Ver cardápio</a>
-                </div>
-                <div class="hero-image">
-                    <!-- Substitua pelo arquivo img/cafe.jpg -->
-                    <div class="hero-placeholder"><img src="https://png.pngtree.com/png-clipart/20250710/original/pngtree-hot-coffee-in-white-cup-with-steam-cartoon-style-png-image_21275396.png" alt=""></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEÇÃO DE CARDS -->
         <section class="cards-section" id="cardapio">
             <div class="container">
                 <h2 class="titulo">Nosso Cardápio</h2>
@@ -182,6 +207,6 @@
 
     <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
-\
+    <script src="script.js"></script>
 </body>
 </html>

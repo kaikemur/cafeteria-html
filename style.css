@@ -112,6 +112,136 @@ ul {
     cursor: pointer;
 }
 
+/* ============ CARROSSEL ============ */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    min-height: 360px;
+    background: linear-gradient(135deg, #4b3021, var(--cor-primaria));
+}
+
+.carousel-track {
+    min-height: 360px;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 2rem 10%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.carousel-slide.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(59, 42, 26, 0.42);
+}
+
+.carousel-slide img {
+    position: relative;
+    z-index: 1;
+    width: min(32%, 280px);
+    height: 260px;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.3));
+}
+
+.carousel-caption {
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+    color: var(--cor-branco);
+}
+
+.carousel-eyebrow {
+    color: #f2c49b;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+
+.carousel-caption h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-caption .btn {
+    background-color: var(--cor-destaque);
+}
+
+.carousel-caption .btn:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-primaria);
+}
+
+.carousel-control {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    background-color: rgba(59, 42, 26, 0.55);
+    color: var(--cor-branco);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-control:hover,
+.carousel-control:focus-visible {
+    background-color: var(--cor-destaque);
+    transform: translateY(-50%) scale(1.08);
+}
+
+.carousel-control-prev {
+    left: 2rem;
+}
+
+.carousel-control-next {
+    right: 2rem;
+}
+
+.carousel-indicators {
+    position: absolute;
+    z-index: 2;
+    bottom: 1.5rem;
+    left: 50%;
+    display: flex;
+    gap: 0.6rem;
+    transform: translateX(-50%);
+}
+
+.carousel-indicator {
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    border: 2px solid var(--cor-branco);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.carousel-indicator.is-active {
+    background-color: var(--cor-branco);
+}
+
 /* ============ HERO ============ */
 .hero {
     background: linear-gradient(135deg, #fdf6ec 0%, #f5e6d3 100%);
@@ -427,6 +557,16 @@ ul {
 
 /* ============ TABLET (768px) ============ */
 @media (max-width: 768px) {
+    .carousel-slide {
+        gap: 3rem;
+        padding: 2rem 12%;
+    }
+
+    .carousel-slide img {
+        width: 30%;
+        height: 210px;
+    }
+
     .hero-container {
         flex-direction: column;
         text-align: center;
@@ -462,6 +602,45 @@ ul {
 
 /* ============ CELULAR (480px) ============ */
 @media (max-width: 480px) {
+    .carousel,
+    .carousel-track {
+        min-height: 430px;
+    }
+
+    .carousel-slide {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 4rem 3.5rem;
+        text-align: center;
+    }
+
+    .carousel-slide img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .carousel-caption h1 {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-eyebrow {
+        font-size: 0.8rem;
+    }
+
+    .carousel-control {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+
+    .carousel-control-prev {
+        left: 0.8rem;
+    }
+
+    .carousel-control-next {
+        right: 0.8rem;
+    }
+
     .menu-toggle {
         display: block;
     }
